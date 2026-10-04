@@ -1,0 +1,86 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f4f6fc;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background: #1E2761;
+  color: #fff;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header .logo { font-size: 22px; font-weight: 700; }
+.site-header .tagline { font-size: 13px; color: #cadcfc; }
+
+/* ---------- MAIN ROW (leftnav + center + rightnav) ---------- */
+.main-row {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 24px;
+}
+
+/* ---------- LEFT NAVBAR ---------- */
+.left-nav {
+  width: 170px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  height: fit-content;
+}
+.left-nav h3 { font-size: 13px; color: #868e96; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.left-nav a {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  color: #1a1a2e;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+.left-nav a:hover { background: #F4F6FC; }
+.left-nav a.active { background: #1E2761; color: #fff; }
+
+/* ---------- CENTER CONTENT ---------- */
+.center-content {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.center-content h1 { font-size: 26px; margin-bottom: 12px; color: #1E2761; }
+.center-content p { font-size: 14.5px; line-height: 1.6; color: #444; margin-bottom: 10px; }
+
+/* ---------- RIGHT NAVBAR ---------- */
+.right-nav {
+  width: 190px;
+  flex-shrink: 0;
+  background: #FFF8EC;
+  border: 1px solid #F0A202;
+  border-radius: 12px;
+  padding: 18px;
+  height: fit-content;
+}
+.right-nav h3 { font-size: 13px; color: #a06800; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+.right-nav p { font-size: 13px; color: #6b5100; line-height: 1.5; margin-bottom: 8px; }
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: #12173f;
+  color: #cadcfc;
+  text-align: center;
+  padding: 16px;
+  font-size: 12.5px;
+}
